@@ -719,7 +719,7 @@ def get_browser_protocol(request):
     proto_header = 'https'
 
     #proto_header = headers.get("X-Scheme", headers.get("X-Forwarded-Proto", None))
-    app_log.warning('Real proto_header: ', headers.get("X-Scheme", headers.get("X-Forwarded-Proto", None)))
+    app_log.warning(f'Real proto_header: {headers.get("X-Scheme", headers.get("X-Forwarded-Proto", None))}')
     if proto_header:
         proto_header = proto_header.split(",")[0].strip().lower()
         if proto_header in {"http", "https"}:
