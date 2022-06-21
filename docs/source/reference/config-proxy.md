@@ -159,6 +159,10 @@ setsebool -P httpd_can_network_connect 1
 
 Replace 8000 with the port the jupyterhub server is running from.
 
+### nginx-ingress
+
+
+
 ## Apache
 
 As with nginx above, you can use [Apache](https://httpd.apache.org) as the reverse proxy.
